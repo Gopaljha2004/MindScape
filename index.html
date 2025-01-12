@@ -67,7 +67,7 @@
                 <h2>Featured Blogs</h2>
                 <div class="blogs-section">
                     <div class="blog-card">
-                        <img src="./Images/featured blogs/blog1.avif" alt="blog-img1">
+                        <img id="blogcardimg" src="./Images/featured blogs/blog1.avif" alt="blog-img1">
                         <div class="blog-context">
                             <p id="category-name">Technology</p>
                             <h4 id="blog-title">
@@ -104,7 +104,7 @@
                      </div>
 
                      <div class="blog-card">
-                        <img src="./Images/featured blogs/blog1.avif" alt="blog-img1">
+                        <img id="blogcardimg" src="./Images/featured blogs/blog2.avif" alt="blog-img1">
                         <div class="blog-context">
                             <p id="category-name">Technology</p>
                             <h4 id="blog-title">
@@ -115,7 +115,7 @@
 
                             <div class="user-info">
                                 <div id="user_img">
-                                    <img src="./Images/userimage/person1.jpg" alt="">
+                                    <img src="./Images/userimage/person2.jpg" alt="">
                                 </div>
                                 <div id="user_name">
                                     <p id="user-name">Ganpath Rao</p>
@@ -142,7 +142,7 @@
 
 
                      <div class="blog-card">
-                        <img src="./Images/featured blogs/blog1.avif" alt="blog-img1">
+                        <img id="blogcardimg" src="./Images/featured blogs/blog3.avif" alt="blog-img1">
                         <div class="blog-context">
                             <p id="category-name">Technology</p>
                             <h4 id="blog-title">
@@ -153,24 +153,24 @@
 
                             <div class="user-info">
                                 <div id="user_img">
-                                    <img src="./Images/userimage/person1.jpg" alt="">
+                                    <img src="./Images/userimage/person3.jpg" alt="">
                                 </div>
                                 <div id="user_name">
                                     <p id="user-name">Ganpath Rao</p>
                                     <p id="blog-time">5 min read</p>
                                 </div>
 
-                                <div>
+                                <div id="like">
                                     <!-- like icon -->
                                     <img height="20" src="./Icons/blog icons/heart.png" alt="like-icon">
                                 </div>
 
-                                <div>
+                                <div id="comment">
                                     <!-- comment icon -->
                                     <img height="20" src="./Icons/blog icons/comment.png" alt="comment-icon">
                                 </div>
 
-                                <div>
+                                <div id="share">
                                     <!-- share icon -->
                                     <img height="20" src="./Icons/blog icons/share.png" alt="share-icon">
                                 </div>
@@ -180,11 +180,83 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- explore categories section -->
+        <section id="third">
+            <h3>Explore Categories</h3>
+            <div id="explore-categories">
+                <div class="categories-card">
+                    <h5>Technology</h5>
+                    <p>Discover the latest insights and stories in technology.</p>
+                </div>
+
+                <div class="categories-card">
+                    <h5>Lifestyle</h5>
+                    <p>Discover the latest insights and stories in lifestyle.
+
+                    </p>
+                </div>
+
+                <div class="categories-card">
+                    <h5>Travel</h5>
+                    <p>Discover the latest insights and stories in travel.</p>
+                </div>
+
+                <div class="categories-card">
+                    <h5>Business</h5>
+                    <p>Discover the latest insights and stories in business.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-
-    </footer>
+        <div class="footer-container">
+          <!-- Section 1: Logo and Description -->
+          <div class="footer-section" id="footer1">
+            <div id="footer-name-logo">
+              <img height="30" src="./Icons/book.png" alt="Book Icon">
+              <h1 class="title">Mindscape</h1>
+            </div>
+            <p>Share your thoughts with the world. Join our community of writers and readers.</p>
+          </div>
+      
+          <!-- Section 2: Quick Links -->
+          <div class="footer-section" id="footer2">
+            <h4>Quick Links</h4>
+            <div class="links">
+              <a href="./pages/blog.html">Blog</a>
+              <a href="./pages/about.html">About</a>
+              <a href="./pages/contact.html">Contact</a>
+            </div>
+          </div>
+      
+          <!-- Section 3: Categories -->
+          <div class="footer-section" id="footer3">
+            <h4>Categories</h4>
+            <div class="links">
+              <a href="./pages/blog.html">Technology</a>
+              <a href="./pages/blog.html">Lifestyle</a>
+              <a href="./pages/blog.html">Travel</a>
+              <a href="./pages/blog.html">Business</a>
+            </div>
+          </div>
+      
+          <!-- Section 4: Social Links -->
+          <div class="footer-section" id="footer4">
+            <h4>Follow Us</h4>
+            <div class="links">
+              <a href="https://x.com/Gopaljha04">Twitter</a>
+              <a href="https://www.instagram.com/gopal._16/">Instagram</a>
+              <a href="https://www.linkedin.com/in/gopal-jha-229a2b243/">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Mindscape. All rights reserved.</p>
+        </div>
+      </footer>
 
     <script src="script.js"></script>
 </body>
