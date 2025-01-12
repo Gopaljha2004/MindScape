@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mindscape</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Icons/book.png" type="image/x-icon">
 </head>
 
 <body>
     <div id="black-bg"></div>
     <header>
         <nav>
+
             <div class="logo_and_title">
                 <div id="title_logo">
                     <img height="30" src="./Icons/book.png" alt="Book Icon">
-                    <h1 class="title">Mindscape</h1>
+                    <h1 class="title"> <a href="./index.html">Mindscape</a></h1>
 
                 </div>
 
@@ -36,6 +38,12 @@
                     Write
                 </button>
             </div>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
 
     </header>
@@ -44,143 +52,244 @@
         <!-- first section -->
         <section id="first">
             <div class="container">
-                <h1>Where Ideas Take Flight</h1>
-                <p>Join our community of writers, thinkers, and creators. Share your stories, insights, and expertise
-                    with readers worldwide.</p>
+                <div class="badge">✨ Next Generation Blogging Platform</div>
+                <h1>Where Ideas Come to Life</h1>
+                <p>Transform your writing experience with AI-powered tools, real-time collaboration, and a thriving
+                    community of creators.</p>
                 <div class="btns">
                     <button id="writing">
-                        <!-- writing click code.. -->
-                        <a href=""></a>
-                        Start Writing
+                        <a href="#">Start Writing </a> <span id="hero-arrow"><img height="22"
+                                src="./Icons/hero section icons/right-arrow.png" alt=""></span>
                     </button>
                     <button id="explore">
                         <a href="./pages/blog.html">Explore Stories</a>
-
                     </button>
                 </div>
             </div>
         </section>
+
 
         <!-- section 2 feature blogs -->
         <section id="second">
             <div class="feature-stories">
-                <h2>Featured Blogs</h2>
+                <div class="section-header">
+                    <div class="title-badge">Featured</div>
+                    <h2>Trending Stories</h2>
+                    <div class="header-line"></div>
+                </div>
+
                 <div class="blogs-section">
-                    <div class="blog-card">
-                        <img id="blogcardimg" src="./Images/featured blogs/blog1.avif" alt="blog-img1">
-                        <div class="blog-context">
-                            <p id="category-name">Technology</p>
-                            <h4 id="blog-title">
-                                The Future of AI in Content Creation
-                            </h4>
-                            <p id="blog-content">Exploring how artificial intelligence is revolutionizing the way we
-                                create and consume content...</p>
-
-                            <div class="user-info">
-                                <div id="user_img">
-                                    <img src="./Images/userimage/person1.jpg" alt="">
+                    <article class="blog-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="image-wrapper">
+                                    <img src="./Images/featured blogs/blog1.avif" alt="blog-img1">
+                                    <div class="overlay-gradient"></div>
                                 </div>
-                                <div id="user_name">
-                                    <p id="user-name">Ganpath Rao</p>
-                                    <p id="blog-time">5 min read</p>
+                                <div class="content-preview">
+                                    <span class="category">Technology</span>
+                                    <h3>The Future of AI in Content Creation</h3>
+                                    <div class="author-brief">
+                                        <img src="./Images/userimage/person1.jpg" alt="author">
+                                        <span>By Ganpath Rao</span>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="card-back">
+                                <p class="full-content">
+                                    Exploring how artificial intelligence is revolutionizing the way we
+                                    create and consume content...
+                                </p>
+                                <div class="interaction-bar">
+                                    <button class="like-btn">
+                                        <img height="20" src="./Icons/blog icons/heart.png" alt="like-icon">
+                                    </button>
 
-                                <div>
-                                    <!-- like icon -->
-                                    <img height="20" src="./Icons/blog icons/heart.png" alt="like-icon">
-                                </div>
-
-                                <div>
-                                    <!-- comment icon -->
-                                    <img height="20" src="./Icons/blog icons/comment.png" alt="comment-icon">
-                                </div>
-
-                                <div>
-                                    <!-- share icon -->
-                                    <img height="20" src="./Icons/blog icons/share.png" alt="share-icon">
+                                    <span class="read-time">5 min read</span>
+                                    <button class="share-btn">
+                                        <img height="20" src="./Icons/blog icons/share.png" alt="share-icon">
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                     </div>
+                    </article>
 
-                     <div class="blog-card">
-                        <img id="blogcardimg" src="./Images/featured blogs/blog2.avif" alt="blog-img1">
-                        <div class="blog-context">
-                            <p id="category-name">Technology</p>
-                            <h4 id="blog-title">
-                                The Future of AI in Content Creation
-                            </h4>
-                            <p id="blog-content">Exploring how artificial intelligence is revolutionizing the way we
-                                create and consume content...</p>
-
-                            <div class="user-info">
-                                <div id="user_img">
-                                    <img src="./Images/userimage/person2.jpg" alt="">
+                    <article class="blog-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="image-wrapper">
+                                    <img src="./Images/featured blogs/blog2.avif" alt="blog-img1">
+                                    <div class="overlay-gradient"></div>
                                 </div>
-                                <div id="user_name">
-                                    <p id="user-name">Ganpath Rao</p>
-                                    <p id="blog-time">5 min read</p>
+                                <div class="content-preview">
+                                    <span class="category">Technology</span>
+                                    <h3>The Future of AI in Content Creation</h3>
+                                    <div class="author-brief">
+                                        <img src="./Images/userimage/person2.jpg" alt="author">
+                                        <span>By Ganpath Rao</span>
+                                    </div>
                                 </div>
-
-                                <div>
-                                    <!-- like icon -->
-                                    <img height="20" src="./Icons/blog icons/heart.png" alt="like-icon">
-                                </div>
-
-                                <div>
-                                    <!-- comment icon -->
-                                    <img height="20" src="./Icons/blog icons/comment.png" alt="comment-icon">
-                                </div>
-
-                                <div>
-                                    <!-- share icon -->
-                                    <img height="20" src="./Icons/blog icons/share.png" alt="share-icon">
+                            </div>
+                            <div class="card-back">
+                                <p class="full-content">
+                                    Exploring how artificial intelligence is revolutionizing the way we
+                                    create and consume content...
+                                </p>
+                                <div class="interaction-bar">
+                                    <button class="like-btn">
+                                        <img height="20" src="./Icons/blog icons/heart.png" alt="like-icon">
+                                    </button>
+                                    <span class="read-time">5 min read</span>
+                                    <button class="share-btn">
+                                        <img height="20" src="./Icons/blog icons/share.png" alt="share-icon">
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                     </div>
+                    </article>
 
-
-                     <div class="blog-card">
-                        <img id="blogcardimg" src="./Images/featured blogs/blog3.avif" alt="blog-img1">
-                        <div class="blog-context">
-                            <p id="category-name">Technology</p>
-                            <h4 id="blog-title">
-                                The Future of AI in Content Creation
-                            </h4>
-                            <p id="blog-content">Exploring how artificial intelligence is revolutionizing the way we
-                                create and consume content...</p>
-
-                            <div class="user-info">
-                                <div id="user_img">
-                                    <img src="./Images/userimage/person3.jpg" alt="">
+                    <article class="blog-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="image-wrapper">
+                                    <img src="./Images/featured blogs/blog3.avif" alt="blog-img1">
+                                    <div class="overlay-gradient"></div>
                                 </div>
-                                <div id="user_name">
-                                    <p id="user-name">Ganpath Rao</p>
-                                    <p id="blog-time">5 min read</p>
+                                <div class="content-preview">
+                                    <span class="category">Technology</span>
+                                    <h3>The Future of AI in Content Creation</h3>
+                                    <div class="author-brief">
+                                        <img src="./Images/userimage/person3.jpg" alt="author">
+                                        <span>By Mini Datta</span>
+                                    </div>
                                 </div>
-
-                                <div id="like">
-                                    <!-- like icon -->
-                                    <img height="20" src="./Icons/blog icons/heart.png" alt="like-icon">
-                                </div>
-
-                                <div id="comment">
-                                    <!-- comment icon -->
-                                    <img height="20" src="./Icons/blog icons/comment.png" alt="comment-icon">
-                                </div>
-
-                                <div id="share">
-                                    <!-- share icon -->
-                                    <img height="20" src="./Icons/blog icons/share.png" alt="share-icon">
+                            </div>
+                            <div class="card-back">
+                                <p class="full-content">
+                                    Exploring how artificial intelligence is revolutionizing the way we
+                                    create and consume content...
+                                </p>
+                                <div class="interaction-bar">
+                                    <button class="like-btn">
+                                        <img height="20" src="./Icons/blog icons/heart.png" alt="like-icon">
+                                    </button>
+                                    <span class="read-time">5 min read</span>
+                                    <button class="share-btn">
+                                        <img height="20" src="./Icons/blog icons/share.png" alt="share-icon">
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                     </div>
+                    </article>
                 </div>
             </div>
         </section>
 
+
+
+        <!-- trending topics section -->
+        <section id="treding">
+            <div class="topics-container">
+                <div class="top">
+                    <h3>Trending Topics</h3>
+                    <div class="header-line"></div>
+                    <p>Discover what's popular in our community right now</p>
+                </div>
+                <div class="topics-card-section">
+                    <div class="topics-card">
+                        <img height="40" src="./Icons/treding topics/artificial-intelligence.png" alt="Ai-icon">
+                        <h4 class="topics-title">Artificial Intellegence</h4>
+                        <h4 class="topics-article">126 articles</h4>
+                    </div>
+
+                    <div class="topics-card">
+                        <img height="40" src="./Icons/treding topics/code.png" alt="Ai-icon">
+                        <h4 class="topics-title">Web Developement</h4>
+                        <h4 class="topics-article">96 articles</h4>
+                    </div>
+
+                    <div class="topics-card">
+                        <img height="40" src="./Icons/treding topics/productivity.png" alt="Ai-icon">
+                        <h4 class="topics-title">Personal Growth</h4>
+                        <h4 class="topics-article">85 articles</h4>
+                    </div>
+
+                    <div class="topics-card">
+                        <img height="40" src="./Icons/treding topics/increase.png" alt="Ai-icon">
+                        <h4 class="topics-title">Productiviy</h4>
+                        <h4 class="topics-article">76 articles</h4>
+                    </div>
+
+                    <div class="topics-card">
+                        <img height="40" src="./Icons/treding topics/robotic-hand.png" alt="Ai-icon">
+                        <h4 class="topics-title">Technology</h4>
+                        <h4 class="topics-article">63 articles</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- featured authors -->
+        <section>
+            <div id="featured-authors">
+                <span class="feature-syle">Featured Authors</span>
+                <h2>Meet Our Top Writers</h2>
+                <p id="feature-authors-para">Learn from the best in our community </p>
+
+                <div id="authors-div">
+                    <div class="author-card">
+                        <img src="./Images/creators/Creator1.avif" alt="">
+                        <h4 id="author-name">Sarah Johnson</h4>
+                        <p id="author-occupation">Tech Journalist</p>
+                        <div class="account_info">
+                            <div id="acc-left">
+                                <h5>45</h5>
+                                <p>Articles</p>
+                            </div>
+                            <div id="acc-right">
+                                <h5>12.5k</h5>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="author-card">
+                        <img src="./Images/creators/Creator2.avif" alt="">
+                        <h4 id="author-name">Michael Chen</h4>
+                        <p id="author-occupation">AI Researcher</p>
+                        <div class="account_info">
+                            <div id="acc-left">
+                                <h5>32</h5>
+                                <p>Articles</p>
+                            </div>
+                            <div id="acc-right">
+                                <h5>9.2k</h5>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="author-card">
+                        <img src="./Images/creators/Creator3.avif" alt="">
+                        <h4 id="author-name">Emma Davis</h4>
+                        <p id="author-occupation">UX Designer</p>
+                        <div class="account_info">
+                            <div id="acc-left">
+                                <h5>28</h5>
+                                <p>Articles</p>
+                            </div>
+                            <div id="acc-right">
+                                <h5>8.5k</h5>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <!-- explore categories section -->
         <section id="third">
@@ -209,54 +318,57 @@
                 </div>
             </div>
         </section>
+
+
     </main>
 
     <footer>
         <div class="footer-container">
-          <!-- Section 1: Logo and Description -->
-          <div class="footer-section" id="footer1">
-            <div id="footer-name-logo">
-              <img height="30" src="./Icons/book.png" alt="Book Icon">
-              <h1 class="title">Mindscape</h1>
+            <!-- Section 1: Logo and Description -->
+            <div class="footer-section" id="footer1">
+                <div id="footer-name-logo">
+                    <img height="30" src="./Icons/book.png" alt="Book Icon">
+                    <h1 class="title">Mindscape</h1>
+                </div>
+                <p>Share your thoughts with the world. Join our community of writers and readers.</p>
             </div>
-            <p>Share your thoughts with the world. Join our community of writers and readers.</p>
-          </div>
-      
-          <!-- Section 2: Quick Links -->
-          <div class="footer-section" id="footer2">
-            <h4>Quick Links</h4>
-            <div class="links">
-              <a href="./pages/blog.html">Blog</a>
-              <a href="./pages/about.html">About</a>
-              <a href="./pages/contact.html">Contact</a>
+
+            <!-- Section 2: Quick Links -->
+            <div class="footer-section" id="footer2">
+                <h4>Quick Links</h4>
+                <div class="links">
+                    <a href="./pages/blog.html">Blog</a>
+                    <a href="./pages/about.html">About</a>
+                    <a href="./pages/contact.html">Contact</a>
+                </div>
             </div>
-          </div>
-      
-          <!-- Section 3: Categories -->
-          <div class="footer-section" id="footer3">
-            <h4>Categories</h4>
-            <div class="links">
-              <a href="./pages/blog.html">Technology</a>
-              <a href="./pages/blog.html">Lifestyle</a>
-              <a href="./pages/blog.html">Travel</a>
-              <a href="./pages/blog.html">Business</a>
+
+            <!-- Section 3: Categories -->
+            <div class="footer-section" id="footer3">
+                <h4>Categories</h4>
+                <div class="links">
+                    <a href="./pages/blog.html">Technology</a>
+                    <a href="./pages/blog.html">Lifestyle</a>
+                    <a href="./pages/blog.html">Travel</a>
+                    <a href="./pages/blog.html">Business</a>
+                </div>
             </div>
-          </div>
-      
-          <!-- Section 4: Social Links -->
-          <div class="footer-section" id="footer4">
-            <h4>Follow Us</h4>
-            <div class="links">
-              <a href="https://x.com/Gopaljha04">Twitter</a>
-              <a href="https://www.instagram.com/gopal._16/">Instagram</a>
-              <a href="https://www.linkedin.com/in/gopal-jha-229a2b243/">LinkedIn</a>
+
+            <!-- Section 4: Social Links -->
+            <div class="footer-section" id="footer4">
+                <h4>Follow Us</h4>
+                <div class="links">
+                    <a href="https://x.com/Gopaljha04">Twitter</a>
+                    <a href="https://www.instagram.com/gopal._16/">Instagram</a>
+                    <a href="https://www.linkedin.com/in/gopal-jha-229a2b243/">LinkedIn</a>
+                    <a href="https://github.com/Gopaljha2004/MindScape">Gituhb</a>
+                </div>
             </div>
-          </div>
         </div>
         <div class="footer-bottom">
-          <p>© 2025 Mindscape. All rights reserved.</p>
+            <p>© 2025 Mindscape. All rights reserved.</p>
         </div>
-      </footer>
+    </footer>
 
     <script src="script.js"></script>
 </body>
